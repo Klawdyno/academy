@@ -1,0 +1,168 @@
+/* Fonts */
+
+@font-face {
+  font-family: "PT_Sans";
+  src: url(../fonts/PT_Sans/PT_Sans-Web-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+}
+
+/* Universal Rules*/
+
+html{
+  font-family: "PT_Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  color: hsla(0, 0%, 29%, 1);
+
+}
+
+body{
+display: flex;
+justify-content: center;
+}
+
+.site-container{
+  width: 1600px;
+}
+
+h1{
+  font-size: 4rem;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+h1,
+h2{
+  font-weight: 700;
+  padding: 1.5rem 0rem;
+  line-height: 1.2;
+}
+
+/* Top Bar*/
+
+.top-bar{
+  position: fixed;
+  z-index: 10;
+  height: 4rem;
+  background-color: hsla(0, 0%, 100%, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 1.5rem;
+  line-height: 1.5rem;
+
+}
+
+.logo span:last-child{
+  color: hsla(0, 0%, 85%, 1);
+  font-weight: 400;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+
+nav span{
+  padding: 0.5rem;
+}
+
+/* Banner*/
+
+#banner {
+  position: relative;
+  top: 4rem;
+  height: auto;
+	background-color: hsla(0, 0%, 85%, 1);
+  display: flex;
+  align-items: center;
+  padding: 2rem 1.5rem;
+
+}
+
+#banner img {
+  padding-right: 1.5rem;
+  width: 60%;
+  height: auto;
+}
+
+.text-box{
+  display: block;
+  padding-right: 8rem;
+
+}
+
+#banner span{
+  color: hsla(0, 0%, 100%, 1);
+}
+
+.btn {
+  background-color: hsla(0, 0%, 29%, 1);
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+
+}
