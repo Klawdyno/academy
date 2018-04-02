@@ -33,27 +33,44 @@ h1{
 }
 
 h2{
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+h3{
   font-size: 2rem;
 }
 
 h1,
-h2{
+h2,
+h3{
   font-weight: 700;
   padding: 1.5rem 0rem;
   line-height: 1.2;
+}
+
+a{
+  color: hsla(220, 50%, 50%, 1);
+  text-decoration: none;
 }
 
 /* Top Bar*/
 
 .top-bar{
   position: fixed;
-  z-index: 10;
+  z-index: 1;
   height: 4rem;
+  width: 100%;
   background-color: hsla(0, 0%, 100%, 1);
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
 
+@media only screen and (min-width: 1600px) {
+	.top-bar{
+    width: 1600px;
+  }
 }
 
 .logo{
@@ -74,7 +91,8 @@ h2{
 nav{
   display: flex;
   align-items: center;
-  padding-right: 1.5rem;
+  margin-right: 1rem;
+
 }
 
 nav span{
@@ -102,8 +120,7 @@ nav span{
 
 .text-box{
   display: block;
-  padding-right: 8rem;
-
+  width: 30%;
 }
 
 #banner span{
@@ -118,22 +135,118 @@ nav span{
   padding: 0.5rem 0rem;
 }
 
+/* Content-section 2*/
+
+.section2{
+  position: relative;
+  top: 4rem;
+  display: flex;
+  padding-bottom: 2rem;
+
+}
+
+.main{
+width: 60%;
+margin: 0rem 1.5rem;
+}
+
+.main img{
+  width: 100%;
+  padding-bottom: 0.5rem;
+  padding-top: 2rem;
+}
+
+.right{
+width: 40%;
+border-left: 1px solid hsla(0, 0%, 85%, 1);
+
+}
+
+.image-container{
+  width: 35%;
+  padding: 1rem;
+}
+
+.image-container img{
+  width: 100%;
+  height: auto;
+}
 
 
 
+.group{
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px double hsla(0, 0%, 85%, 1);
 
+}
 
+.column-text{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
 
+.column-text h3,
+a,
+span{
+  padding-bottom: 0.5rem;
+}
 
+.signature{
+  font-size: 0.9rem
+}
 
+/* Content-section 3*/
 
+.section3{
+  position: relative;
+  top: 4rem;
+  background-color: hsla(0, 0%, 85%, 1);
+  padding: 2rem 3.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
+.section3 h2{
+  text-align: center;
+  padding: 0rem;
+  margin-bottom: 1rem;
+}
 
+.course-content{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
 
+}
 
+.course{
+  padding: 1rem;
+  width: 30%;
 
+}
+.course img{
+  width: 100%;
+  height: auto;
+}
 
+.course div {
+  background-color: white;
+  padding: 1rem;
+}
 
+.course h4{
+  text-transform: uppercase;
+  padding: 0.5rem 0rem;
+  color: hsla(0, 0%, 50%, 1);
+}
+
+.course p{
+  padding-bottom: 0.5rem;
+}
 
 
 
