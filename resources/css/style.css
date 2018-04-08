@@ -34,7 +34,8 @@ h1{
 
 h2{
   font-size: 3rem;
-  padding-top: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 h3{
@@ -42,7 +43,6 @@ h3{
 }
 
 h1,
-h2,
 h3{
   font-weight: 700;
   padding: 1.5rem 0rem;
@@ -52,6 +52,10 @@ h3{
 a{
   color: hsla(220, 50%, 50%, 1);
   text-decoration: none;
+}
+
+p{
+  padding-top: 0.5rem,
 }
 
 /* Top Bar*/
@@ -141,24 +145,32 @@ nav span{
   position: relative;
   top: 4rem;
   display: flex;
-  padding-bottom: 2rem;
 
 }
 
 .main{
 width: 60%;
-margin: 0rem 1.5rem;
+
+padding: 0rem 1.5rem;
+  border-right: 1px solid hsla(0, 0%, 85%, 1);
 }
 
 .main img{
   width: 100%;
-  padding-bottom: 0.5rem;
   padding-top: 2rem;
+
+}
+
+.main-text{
+  padding: 2rem 0rem;
+}
+
+.main-text h2{
+  padding-bottom: 1rem;
 }
 
 .right{
 width: 40%;
-border-left: 1px solid hsla(0, 0%, 85%, 1);
 
 }
 
@@ -177,7 +189,7 @@ border-left: 1px solid hsla(0, 0%, 85%, 1);
 .group{
   display: flex;
   padding: 1rem;
-  border-bottom: 1px double hsla(0, 0%, 85%, 1);
+  border-bottom: 3px double hsla(0, 0%, 85%, 1);
 
 }
 
@@ -224,8 +236,9 @@ flex-wrap: wrap;
 }
 
 .course{
-  padding: 1rem;
+  margin: 1rem;
   width: 30%;
+  background-color: white;
 
 }
 .course img{
@@ -235,7 +248,7 @@ flex-wrap: wrap;
 
 .course div {
   background-color: white;
-  padding: 1rem;
+  margin: 1rem;
 }
 
 .course h4{
@@ -245,37 +258,80 @@ flex-wrap: wrap;
 }
 
 .course p{
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: hsla(0, 0%, 50%, 1);
 }
 
 
 
+/* Content-section 4*/
+
+.section4{
+  position: relative;
+  top: 4rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+}
+
+.section4 h2{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.thesis-content{
+  display: flex;
+
+}
+
+.videoplayer {
+  width: 60%;
+  height: auto;
+}
+
+.videoplayer h3{
+  text-align: left;
+}
+
+video {
+  width: 100%;
+  height: auto;
+}
+
+.thesis-content .right {
+width: 40%;
+border: none;
+
+}
+
+.thesis-content .group{
+  display: flex;
+  padding: 1rem;
+  border: none;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
 footer{
+  position: relative;
+  top: 4rem;
+  padding: 1rem 1.5rem;
+display: flex;
+justify-content: space-between;
+border-top: 1px solid hsla(0, 0%, 85%, 1);
 
+
+}
+
+footer ul{
+  display: flex;
+  padding-left: 0.5rem;
+}
+
+footer li{
+  padding-left: 0.5rem;
 }
