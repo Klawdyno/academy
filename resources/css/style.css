@@ -36,10 +36,12 @@ h2{
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
+  color: hsla(207, 90%, 54%, 1);
 }
 
 h3{
   font-size: 2rem;
+  color: hsla(207, 90%, 54%, 1);
 }
 
 h1,
@@ -50,8 +52,21 @@ h3{
 }
 
 a{
-  color: hsla(220, 50%, 50%, 1);
+  color: hsla(207, 90%, 54%, 1);
   text-decoration: none;
+}
+
+a:hover{
+  color: hsla(88, 50%, 53%, 1);
+}
+
+li{
+  color: hsla(0, 0%, 29%, 1);
+  text-decoration: none;
+}
+
+li:hover{
+  color: hsla(207, 90%, 54%, 1);
 }
 
 p{
@@ -84,22 +99,27 @@ p{
   font-weight: 700;
   padding-left: 1.5rem;
   line-height: 1.5rem;
-
+  color: hsla(207, 90%, 54%, 1);
 }
 
 .logo span:last-child{
-  color: hsla(0, 0%, 85%, 1);
+  color: hsla(88, 50%, 53%, 1);
   font-weight: 400;
 }
+
 
 nav{
   display: flex;
   align-items: center;
   margin-right: 1rem;
-
 }
 
-nav span{
+ul{
+  display: flex;
+  align-items: center;
+}
+
+li{
   padding: 0.5rem;
 }
 
@@ -109,7 +129,8 @@ nav span{
   position: relative;
   top: 4rem;
   height: auto;
-	background-color: hsla(0, 0%, 85%, 1);
+	background-color: hsla(207, 90%, 54%, 1);
+  color: white;
   display: flex;
   align-items: center;
   padding: 2rem 1.5rem;
@@ -127,17 +148,26 @@ nav span{
   width: 30%;
 }
 
-#banner span{
-  color: hsla(0, 0%, 100%, 1);
+#banner h3{
+  color: white;
 }
 
-.btn {
-  background-color: hsla(0, 0%, 29%, 1);
+
+.start {
+  background-color: hsla(88, 50%, 53%, 1);
   width: 100%;
   font-size: 1.5rem;
   text-align: center;
   padding: 0.5rem 0rem;
+  color: white;
 }
+
+.start:hover {
+  background-color: white;
+  color: hsla(88, 50%, 53%, 1);
+}
+
+
 
 /* Content-section 2*/
 
@@ -145,6 +175,7 @@ nav span{
   position: relative;
   top: 4rem;
   display: flex;
+
 
 }
 
@@ -174,6 +205,7 @@ width: 40%;
 
 }
 
+
 .image-container{
   width: 35%;
   padding: 1rem;
@@ -185,12 +217,24 @@ width: 40%;
 }
 
 
-
 .group{
   display: flex;
   padding: 1rem;
   border-bottom: 3px double hsla(0, 0%, 85%, 1);
+}
 
+.highlight{
+  background-color: hsla(88, 50%, 53%, 1);
+  color: white;
+}
+
+.highlight h3{
+  color: white;
+}
+
+.highlight a:hover{
+  color: white;
+  text-decoration: underline;
 }
 
 .column-text{
@@ -200,10 +244,16 @@ width: 40%;
   padding: 1rem;
 }
 
+.link{
+    color: hsla(220, 50%, 50%, 1);
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+}
+
 .column-text h3,
-a,
 span{
   padding-bottom: 0.5rem;
+
 }
 
 .signature{
@@ -215,7 +265,7 @@ span{
 .section3{
   position: relative;
   top: 4rem;
-  background-color: hsla(0, 0%, 85%, 1);
+  background-color: hsla(207, 90%, 54%, 1);
   padding: 2rem 3.5rem;
   display: flex;
   justify-content: center;
@@ -226,6 +276,7 @@ span{
   text-align: center;
   padding: 0rem;
   margin-bottom: 1rem;
+  color: white;
 }
 
 .course-content{
@@ -262,6 +313,10 @@ flex-wrap: wrap;
   color: hsla(0, 0%, 50%, 1);
 }
 
+
+.course:hover{
+   box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
+}
 
 
 /* Content-section 4*/
@@ -306,12 +361,11 @@ border: none;
 
 }
 
-.thesis-content .group{
+.group2{
   display: flex;
   padding: 1rem;
   border: none;
-
-
+  margin-left: 1.2rem;
 }
 
 
@@ -322,16 +376,6 @@ footer{
   padding: 1rem 1.5rem;
 display: flex;
 justify-content: space-between;
+align-items: center;
 border-top: 1px solid hsla(0, 0%, 85%, 1);
-
-
-}
-
-footer ul{
-  display: flex;
-  padding-left: 0.5rem;
-}
-
-footer li{
-  padding-left: 0.5rem;
 }
