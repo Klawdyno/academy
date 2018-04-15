@@ -28,8 +28,11 @@ justify-content: center;
   width: 1600px;
 }
 
+
 h1{
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-bottom: 1.5rem;
 }
 
 h2{
@@ -44,7 +47,7 @@ h3{
   color: hsla(207, 90%, 54%, 1);
 }
 
-h1,
+
 h3{
   font-weight: 700;
   padding: 1.5rem 0rem;
@@ -57,8 +60,10 @@ a{
 }
 
 a:hover{
-  color: hsla(88, 50%, 53%, 1);
+  color: hsla(40, 90%, 54%, 1);
 }
+
+
 
 li{
   color: hsla(0, 0%, 29%, 1);
@@ -69,9 +74,11 @@ li:hover{
   color: hsla(207, 90%, 54%, 1);
 }
 
+
 p{
   padding-top: 0.5rem,
 }
+
 
 /* Top Bar*/
 
@@ -92,6 +99,8 @@ p{
   }
 }
 
+
+
 .logo{
   display: flex;
   align-items: center;
@@ -103,10 +112,14 @@ p{
 }
 
 .logo span:last-child{
-  color: hsla(88, 50%, 53%, 1);
+  color: hsla(40, 90%, 54%, 1);
   font-weight: 400;
 }
 
+
+
+
+/*Navigation*/
 
 nav{
   display: flex;
@@ -123,6 +136,35 @@ li{
   padding: 0.5rem;
 }
 
+.phone{
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+
+.site-container{
+  width: 480px;
+}
+
+.top-bar{
+  width: 100%;
+}
+
+.logo{
+  display: none;
+}
+
+nav{
+  display: none;
+}
+
+  .phone{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 /* Banner*/
 
 #banner {
@@ -137,36 +179,94 @@ li{
 
 }
 
-#banner img {
-  padding-right: 1.5rem;
+
+.image {
+
   width: 60%;
+  height: 35rem;
+  overflow: hidden;
+
+}
+
+.image img {
+  max-width: 100%;
   height: auto;
+  display: block;
+}
+
+.text-group{
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem 1.5rem;
+  width: 30%;
 }
 
 .text-box{
-  display: block;
-  width: 30%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
 }
+
+.text-box h1,
+h3 {
+  display: flex;
+
+}
+
 
 #banner h3{
   color: white;
 }
 
+@media only screen and (max-width: 1024px) {
+
+#banner{
+  flex-direction: column;
+  padding: 0rem;
+}
+
+.image{
+  width:100%;
+  height: auto;
+  margin: 0rem;
+}
+
+.text-group{
+  width: 100%;
+}
+.text-box{
+  width: 100%;
+  padding: 0rem 1rem;
+}
+
+}
+
+
+
+
+
+
+/* Start button*/
 
 .start {
-  background-color: hsla(88, 50%, 53%, 1);
+  display: flex;
+  background-color: hsla(40, 90%, 54%, 1);
   width: 100%;
   font-size: 1.5rem;
-  text-align: center;
+  justify-content: center;
   padding: 0.5rem 0rem;
   color: white;
 }
 
 .start:hover {
   background-color: white;
-  color: hsla(88, 50%, 53%, 1);
+  color: hsla(40, 90%, 54%, 1);
 }
 
+.start{
+  transition: all 250ms ease-in-out 0ms;
+}
 
 
 /* Content-section 2*/
@@ -175,9 +275,16 @@ li{
   position: relative;
   top: 4rem;
   display: flex;
-
-
 }
+
+
+@media only screen and (max-width: 1024px) {
+  .section2{
+    flex-direction: column;
+  }
+}
+
+/* Content-section 2 - main section*/
 
 .main{
 width: 60%;
@@ -200,20 +307,59 @@ padding: 0rem 1.5rem;
   padding-bottom: 1rem;
 }
 
+.signature{
+  font-size: 0.9rem
+}
+
+@media only screen and (max-width: 1024px){
+  .main{
+    width: 100%;
+    border-bottom: 1px solid hsla(0, 0%, 85%, 1);
+    padding: 0rem;
+  }
+
+  .main img{
+    padding: 0rem;
+  }
+
+  .main-text{
+    padding: 2rem 1rem;
+  }
+
+}
+
+
+/* Content-section 2 - right section*/
+
 .right{
 width: 40%;
+padding-top: 1rem;
+
+}
+
+@media only screen and (max-width: 1024px){
+  .right{
+    width: 100%;
+  }
 
 }
 
 
 .image-container{
   width: 35%;
-  padding: 1rem;
+
 }
 
 .image-container img{
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 1024px){
+
+  .image-container{
+    padding: 0rem;
+  }
 }
 
 
@@ -223,14 +369,17 @@ width: 40%;
   border-bottom: 3px double hsla(0, 0%, 85%, 1);
 }
 
+
+
 .highlight{
-  background-color: hsla(88, 50%, 53%, 1);
+  background-color: hsla(40, 90%, 54%, 1);
   color: white;
 }
 
 .highlight h3{
   color: white;
 }
+
 
 .highlight a:hover{
   color: white;
@@ -244,11 +393,7 @@ width: 40%;
   padding: 1rem;
 }
 
-.link{
-    color: hsla(220, 50%, 50%, 1);
-    text-decoration: none;
-    padding-bottom: 0.5rem;
-}
+
 
 .column-text h3,
 span{
@@ -256,9 +401,7 @@ span{
 
 }
 
-.signature{
-  font-size: 0.9rem
-}
+
 
 /* Content-section 3*/
 
@@ -278,6 +421,14 @@ span{
   margin-bottom: 1rem;
   color: white;
 }
+@media only screen and (max-width: 1024px){
+  .section3{
+    padding: 2rem 0rem;
+  }
+}
+
+
+/* Content-section 3 - course content*/
 
 .course-content{
 display: flex;
@@ -318,6 +469,23 @@ flex-wrap: wrap;
    box-shadow: 10px 10px 10px rgba(0, 0, 0, .5);
 }
 
+.course{
+  transition: box-shadow 250ms ease-in-out 0ms;
+}
+
+@media only screen and (max-width: 1024px){
+  .course-content{
+    justify-content: space-between;
+
+  }
+  .course{
+    margin: 1rem;
+    width: 29%;
+
+  }
+
+}
+
 
 /* Content-section 4*/
 
@@ -333,7 +501,7 @@ flex-wrap: wrap;
 
 .section4 h2{
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
 .thesis-content{
@@ -344,6 +512,7 @@ flex-wrap: wrap;
 .videoplayer {
   width: 60%;
   height: auto;
+  padding-top: 1rem;
 }
 
 .videoplayer h3{
@@ -355,11 +524,25 @@ video {
   height: auto;
 }
 
+@media only screen and (max-width:768px){
+  .thesis-content{
+    flex-direction: column;
+  }
+
+  .videoplayer{
+    width: 100%;
+
+  }
+}
+
 .thesis-content .right {
 width: 40%;
 border: none;
 
 }
+
+
+
 
 .group2{
   display: flex;
@@ -369,6 +552,30 @@ border: none;
 }
 
 
+/* Content-section 4 - right section*/
+
+.group2{
+  display: flex;
+  padding: 1rem;
+  border: none;
+  flex-direction: row;
+}
+
+@media only screen and (max-width:768px){
+
+  .thesis-content .right{
+width: 100%;
+  }
+  .group2{
+    margin-left: 0rem;
+  }
+
+
+}
+
+
+
+/* footer*/
 
 footer{
   position: relative;
